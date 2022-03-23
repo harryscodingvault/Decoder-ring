@@ -4,7 +4,7 @@
 // of the anonymous function on line 6
 
 const polybiusModule = (function () {
-  // you can add any code you want within this function scope
+  // Dictionaries with decoding and encoding alphabet
 
   const encodeDic = {
     a: "11",
@@ -64,6 +64,8 @@ const polybiusModule = (function () {
 
   function polybius(input, encode = true) {
     const stringToLowerCase = input.toLowerCase();
+
+    // Decode
     const encodeMessage = (message) => {
       let result = "";
       for (let i = 0; i < message.length; i++) {
@@ -78,6 +80,7 @@ const polybiusModule = (function () {
       return result;
     };
 
+    // Decode
     const decodeMessage = (message) => {
       const numbers = message.replace(/[^0-9]/g, "");
       if (numbers.length % 2 !== 0) return false;
