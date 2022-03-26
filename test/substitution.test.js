@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { substitution } = require("../src/substitution");
 
-describe("substitution() submission tests written by Thinkful", () => {
+describe("substitution tests", () => {
   describe("error handling", () => {
     it("should return false if the substitution alphabet is missing", () => {
       const message = "message";
